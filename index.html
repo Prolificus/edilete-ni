@@ -1,0 +1,450 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>long bond paper size - Brave Search</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #fff8f2;
+            color: #3d2b2b;
+        }
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                radial-gradient(circle at top left, #ffd9e8, transparent 35%),
+                radial-gradient(circle at bottom right, #ffe5c8, transparent 35%),
+                #fff8f2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .small-title {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 14px;
+            color: #a66b78;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 10vw, 110px);
+            line-height: 0.95;
+            font-weight: normal;
+            color: #9b4d61;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            display: block;
+            font-style: italic;
+            color: #d27a8e;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.7;
+            max-width: 650px;
+            margin: auto;
+            color: #6d5555;
+        }
+
+        .scroll {
+            margin-top: 45px;
+            display: inline-block;
+            padding: 13px 28px;
+            border: 1px solid #c98a99;
+            border-radius: 30px;
+            color: #9b4d61;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .scroll:hover {
+            background: #9b4d61;
+            color: white;
+        }
+
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 100px 20px;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title small {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #b27582;
+        }
+
+        .section-title h2 {
+            font-size: 45px;
+            font-weight: normal;
+            margin-top: 10px;
+            color: #75434f;
+        }
+
+
+        /* =========================
+           MESSAGE
+        ========================= */
+
+        .message {
+            background: #fff;
+        }
+
+        .message-box {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            line-height: 2;
+            color: #665454;
+        }
+
+        .quote {
+            font-size: 45px;
+            color: #d27a8e;
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           PHOTO GALLERY
+        ========================= */
+
+        .gallery {
+            background: #fff3f5;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .photo {
+            height: 350px;
+            overflow: hidden;
+            border-radius: 18px;
+            background: #ead8dc;
+            box-shadow: 0 10px 30px rgba(90, 50, 50, 0.12);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           SPECIAL MEMORY
+        ========================= */
+
+        .memory {
+            background: #fffaf6;
+        }
+
+        .memory-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .memory-image {
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .memory-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .memory-text h3 {
+            font-size: 38px;
+            font-weight: normal;
+            color: #8e5260;
+            margin-bottom: 20px;
+        }
+
+        .memory-text p {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #665454;
+        }
+
+
+        /* =========================
+           BIRTHDAY WISH
+        ========================= */
+
+        .wish {
+            text-align: center;
+            background:
+                linear-gradient(
+                    rgba(119, 65, 78, 0.88),
+                    rgba(119, 65, 78, 0.88)
+                ),
+                url("birthday-background.jpg");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .wish h2 {
+            font-size: clamp(40px, 7vw, 70px);
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .wish p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #382529;
+            color: #e8cfd3;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           ANIMATION
+        ========================= */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .photos {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .photo {
+                height: 280px;
+            }
+
+            .memory-content {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .memory-image {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            section {
+                padding: 70px 18px;
+            }
+
+            .photos {
+                grid-template-columns: 1fr;
+            }
+
+            .photo {
+                height: 380px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .message-box {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                A little something for you
+            </div>
+
+            <h1>
+                Happy
+                <span>Birthday!</span>
+            </h1>
+
+            <p>
+                Today is your special day Charmel because it's the day
+                someone like you came into this world.
+            </p>
+
+            <a href="#message" class="scroll">
+                Padayun ↓
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         MESSAGE
+    ====================================== -->
+
+    <section class="message" id="message">
+
+        <div class="section-container">
+
+            <div class="section-title">
+
+                
+
+                <h2>HAPPY BIRTHDAY Charmel</h2>
+
+            </div>
+
+
+            <div class="message-box">
+
+                <div class="quote">“</div>
+
+                <p>
+                    Happy Birthday! 🎉 today is your birtday and i want you to greet you the happiest birthday.
+
+                    
+<br><br>
+
+                    We've known each other for almost a quarter of the entire year, and na lipay ko na naka ila ko ug taong kaparehas sa imuha. gusto lang nako na e greet ka ug happy birth day and hopefully mag birthday paka ug daghan puhon 💕
+                    <br>
+                    <br>
+
+                    Thank you for being you.
+                    I hope you have the birthday you deserve. ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="wish">
+
+        <div class="section-container">
+
+            <h2>
+                Happiest Birtday Year Charmel. 🎂
+            </h2>
+
+            <p>
+                May your days be filled with happiness,
+                your heart with peace, and your life with
+                people who genuinely care about you.
+
+                <br><br>
+
+                Happy Birthday!!! ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Made with love ❤️
+        </p>
+
+        <br>
+        
+<p> Char HAHAHAHAHAH </p>
+
+    </footer>
+
+
+</body></html>
